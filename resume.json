@@ -1,0 +1,31 @@
+{
+  "name": "Sangay Rabten",
+  "title": "Network & Cybersecurity Professional",
+  "summary": "Hands-on experience in networking, cybersecurity, and system administration. Skilled in firewall configuration, VLANs, OSPF, Active Directory, and Azure administration.",
+  "experience": [
+    {
+      "role": "Network Support Officer",
+      "company": "Canning College",
+      "year": "2025",
+      "achievements": [
+        "Configured and maintained firewalls, VLANs, NAT, and OSPF",
+        "Supported Active Directory and Microsoft 365 users",
+        "Provided troubleshooting for network issues"
+      ]
+    },
+    {
+      "role": "Intern – Project Support Officer",
+      "company": "Macmahon",
+      "year": "2024",
+      "achievements": [
+        "Worked on rostering, time, attendance, and payroll transformation project",
+        "Provided IT project support and documentation"
+      ]
+    }
+  ],
+  "skills": [
+    "Cybersecurity", "Linux CLI", "Snort IDS", "Firewall Configurations",
+    "Active Directory", "Azure", "Networking", "Python"
+  ],
+  "certifications": ["CompTIA (in progress)"]
+}
