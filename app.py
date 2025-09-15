@@ -1,5 +1,3 @@
-Flask==3.0.2
-gunicorn==21.2.0
 from flask import Flask, request, jsonify
 from openai import OpenAI
 import json
