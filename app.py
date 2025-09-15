@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from openai import OpenAI
+from groq import Groq
 import json
 import os
 
@@ -10,8 +10,8 @@ with open("resume.json") as f:
 # Setup Flask app
 app = Flask(__name__)
 
-# OpenAI client
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Groq client
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 @app.route("/ask", methods=["POST"])
 def ask():
@@ -27,7 +27,7 @@ def ask():
     )
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="llama-3.1-70b-versatile",  # Groq's recommended model
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": f"{context}\n\nEmployer: {question}"}
