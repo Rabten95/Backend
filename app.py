@@ -27,7 +27,7 @@ def ask():
     )
 
     response = client.chat.completions.create(
-        model="llama-3.1-70b-versatile",  # Groq's recommended model
+        model="llama-3.2-70b-text-preview",  # Groq's recommended model
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": f"{context}\n\nEmployer: {question}"}
